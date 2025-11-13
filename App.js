@@ -23,6 +23,7 @@ const mostrarUsuariosRuta = require ('./rutas/mostrarUsuariosRuta.js');//(DATOS)
 
 /*-------------------- SECCIÓN DE PRUEBA - IMPORTACIONES - INICIO---------->>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /**/
+const mostrarProgramaRuta = require ('./rutas/mostrarProgramaRuta.js');//(DATOS)}
 /*-------------------- SECCIÓN DE PRUEBA - IMPORTACIONES - FIN <<<<<<<<<<<<<<<<<<<<<-----------------*/
 
 
@@ -34,6 +35,7 @@ app.use('/mostrarUsuarios', mostrarUsuariosRuta); //localhost:4001/mostrarUsuari
 
 /*------ INICIO SECCIÓN DE PRUEBAS - USO DE RUTAS Y OTROS ------------------------------------->>>>>>>>>>>>>>*/
 /**/
+app.use('/mostrarPrograma', mostrarProgramaRuta); //localhost:4001/mostrarPrograma/programaHuayllay-(DATOS)
 /*------ FIN SECCIÓN DE PRUEBAS - USO DE RUTAS Y OTROS <<<<<<<<<<<<<<<---------------------------------------*/
 
 
