@@ -5,7 +5,8 @@ const pool = require('../configuracion/conexion.js');
 * Cambia la forma en que se ejecuta la consulta para usar el pool
 */
 const obtenerUsuarios = (callback) => {
-	const consulta = 'SELECT * FROM usuarios';
+	//const consulta = 'SELECT * FROM usuarios';
+	const consulta = 'SELECT id_us, usuario_us, nombres_us, apellidos_us, celular_us FROM usuarios';
 	
 	// ⚠️ 1. Obtiene una conexión del pool
 	pool.getConnection((err, connection) => {
